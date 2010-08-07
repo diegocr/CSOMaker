@@ -1,0 +1,29 @@
+Short:        CSOMaker - Convert CSO to ISO and viceversa
+Author:       Diego Casorran
+Uploader:     diegocr <at> users <dot> sf <dot> net
+Type:         util/misc
+Version:      0.1
+Architecture: m68k-amigaos > 3.0
+Requires:     asyncio.library
+
+
+CSOMaker converts CD-ROM images in CSO format back to ISO9660 format, and
+viceversa, it's based on the 'Compressed ISO9660 conveter by BOOSTER' tool.
+
+Program Template:
+
+	SOURCE/A,DEST/A,LEVEL/N
+
+
+Examples:
+
+	CSO to ISO:
+		csomaker test.cso test.iso
+	
+	ISO to CSO:
+		csomaker test.iso test.cso 9
+		
+		( where 9 is the ZLib compression level )
+
+
+Current version works under Linux, AROS, AmigaOS 3.x (m68k), and AmigaOS 4.x (PowerPC)
